@@ -1,0 +1,174 @@
+body{
+    background-color:  #c0e2ea;
+    font-size: 20px;
+}
+#sidebarMenu{
+    background-color: #fff;
+    display: inline-block;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    color: #8f8a8a ;
+ }
+ .cont{
+    background-color: #fff;
+    margin-left: 21%;
+    /* width: 50%; */
+    height: 100px;
+    justify-content: end;
+    display: flex;
+    right: 0;
+    top: 0;
+}
+li{
+    display: flex;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-right: 5px;
+}
+li:hover{
+    background-color: #c0e2ea;
+}
+i, span{
+    color: #8f8a8a ;
+}
+a{
+    text-decoration: none;
+}
+.cont{
+    background-color: #fff;
+    margin-left: 21%;
+    /* width: 50%; */
+    height: 100px;
+    justify-content: end;
+    display: flex;
+    right: 0;
+    top: 0;
+}
+.ma{
+    margin-left: 30rem;
+    display: flex;
+    margin-top: 5rem;
+}
+.box{
+    height: 25rem;
+    width: 20rem;
+    background-color: #3697ab;
+    border-radius: 15px;
+    justify-content:center;
+    position: relative;
+    text-align: center;
+    padding-bottom: 4rem;
+   
+}
+.sp{
+    margin-bottom: 3rem;
+    display: flex;
+    font-size: 3rem;
+}
+.ma2{
+    height: 25rem;
+    width: 20rem;
+    background-color:#fff;
+    border-radius: 15px;
+    justify-content:center;
+    position: relative;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.sp1{
+    margin-bottom: 3rem;
+    display: flex;
+    font-size: 3rem;
+}
+.con{
+   display: flex;
+   flex-direction: column;
+}
+.ma3{
+flex-direction: column;
+display: flex;
+}
+.ma4{
+    flex-direction: column;
+    display: flex;
+    margin-left: 10rem;
+    }
+#myChart{
+    display: flex;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.ic{
+    font-size: 40px;
+    color: #fff;
+    margin-top: 1rem;
+}
+.ic1{
+    color: #fff;
+    margin-bottom: -1rem;
+}
+.sp2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 4rem;
+}
+.bx{
+    width: 80px;
+    height: 70px;
+    background-color: #C0E2EA;
+    border-radius: 90px;
+    margin-top: 1rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+    margin-left: 7rem;
+}
+.ic2{
+    color: #3697ab;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+.ic3{
+    color: #8f8a8a;
+    margin-bottom: -1rem;
+}
+#my{
+    display: flex;
+    padding: 2rem;
+}
+.sp3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+.sp4{
+    display: flex;
+}
+#mon{
+    display: flex;
+    margin-top: 20rem;
+}
+/* @media all and (max-width: ) {
+    body{
+    font-size: 18px;
+    }
+    i,span{
+   display: none;
+    }
+    }
+    #sidebarMenu{
+        width: 10%;
+        height: 200vh;
+    }
+    .im{
+        display: none;
+    } */

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dashbord.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="na">
+        <nav id="sidebarMenu">
+            <img class="im" src="téléchargement.png">
+            <ul>
+               <li>
+                <a href="dashbord.html">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Dashbord</span>
+               </a>
+               </li>
+               <li>
+                <a href="facture.html">
+                    <i class="fa-solid fa-peace"></i>
+                    <span>Facture</span>
+               </a>
+               </li>
+               <li>
+                <a href="commande.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Commande</span>
+               </a>
+               </li>
+               <li>
+                <a href="suivi.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Suivi</span>
+               </a>
+               </li>
+               <li>
+                <a href="serviceclient.html">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <span>Service Client</span>
+               </a>
+               </li>
+            </ul>
+            <ul style="margin-top: 60rem;">
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Paramètre du compte</span>
+                    </a>
+                   </li>
+                   <li>
+                    <a href="">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Deconnexion</span>
+                   </a>
+                   </li>
+            </ul>
+        </nav>
+       </div>
+       <div class="cont">
+        <img style="width: 50px;margin-left: 4rem;" src="bell.svg">
+      <img style="width:4%;margin-left: 4rem;" src="avatar.jpg">
+     </div>
+     <main class="ma">
+        <div class="con">
+          <div class="sp4">
+            <div class="ma3">
+            <span class="sp">Analyses positives</span>
+            <div class="box">
+                <i class="ic fa-solid fa-bolt"></i>
+                <h1 class="ic1">Positif</h1>
+                <canvas id="myChart"></canvas>
+                <span class="sp2">80 %</span>
+            </div>
+           </div>
+           <div class="ma4">
+            <span class="sp1">Analyses positives</span>
+            <div class="ma2">
+                    <div class="bx"><i class="ic2 fa-solid fa-droplet"></i></div>
+                    <h2 class="ic3">Negatif</h2>
+                    <canvas id="my"></canvas>
+                    <span class="sp3">50 %</span>
+            </div>
+        </div>
+        </div>
+        <canvas id="mon"></canvas>
+        </div>
+     <script src="ChartJsFile/chart.umd.min.js"></script>
+      <script>
+        const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            datasets: [{
+              data: [91,9],
+              borderWidth: 0,
+              backgroundColor:['white','rgba(255,255,255,0.2)']
+            }]
+          },
+          options: {
+            cutout:"80%",
+            circumference:300,
+            rotation:210,
+          }
+        });
+      </script>
+           <script src="ChartJsFile/chart.umd.min.js"></script>
+           <script>
+             const ct = document.getElementById('my');
+             new Chart(ct, {
+               type: 'doughnut',
+               data: {
+                 datasets: [{
+                   data: [50,50],
+                   borderWidth: 0,
+                   backgroundColor:['#3597AA','#D9EBF2']
+                 }]
+               },
+               options: {
+                 cutout:"80%",
+                 circumference:300,
+                 rotation:210,
+               }
+             });
+           </script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                         const cd = document.getElementById('mon');
+                         new Chart(cd, {
+                           type: 'bar',
+                           data: {
+                             labels: ['JAN', 'FEV', 'MARS', 'AVRIL', 'MAI', 'JUIN','JUL','AOUT','SEPT','OCT','NOV','DEC'],
+                             datasets: [{
+                               label: '',
+                               data: [16, 14, 20, 12, 16, 10, 14, 16, 16, 16, 16, 16],
+                               backgroundColor : [
+                               'white'
+                               ],
+                             hoverBackgroundColor : [
+                                 'cadetblue'
+                             ],
+                             barThickness: 50
+                             }]
+                           },
+                           options: {
+                             scales: {
+                               y: {
+                                 beginAtZero: true,
+                                 display: false,
+                               },
+                               x: {
+                                 grid: {
+                                   color:'white'
+                                 }
+                               }
+                             },
+                             plugins:{
+                             legend:{
+                               display:false,
+                             }
+                           },
+                           }
+                         });
+                  </script>
+      </main>
+</body>
+</html>
